@@ -45,13 +45,14 @@ footer {
 footer h2 {
   display: inline;
   color: #024e76;
-  font-size: 30px;
+  font: size 30; px;
   margin: 0;
 }
 footer div {
   float: right;
-  line-height: 1.5;
+  line-height: 1.25;
   text-align: right;
+  color: #39a6b2;
 }
 footer a {
   color: #024e76;
