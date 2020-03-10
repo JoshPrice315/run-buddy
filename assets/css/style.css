@@ -60,6 +60,8 @@ footer a {
 section {
   padding-top: 200px;
   padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 /* Hero Style Start */
 .hero {
@@ -123,6 +125,8 @@ section {
 .steps {
   text-align: center;
   background: #fce138;
+  margin-left: -50px;
+  margin-right: -50px;
 }
 
 .section-title {
@@ -163,4 +167,23 @@ section {
 
 .steps span {
   font-size: 38px;
+}
+.trainers {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+  overflow: auto;
+}
+
+.trainer img {
+  width: 35%;
+  float: left;
+}
+
+.trainer-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
 }
