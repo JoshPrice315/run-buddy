@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 <body>
-  <head>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <html lang="en">
     <!-- navigation -->
     <header>
       <h1>
@@ -29,10 +29,11 @@
         </ul>
       </nav>
     </header>
-      <div>
-        <!-- Add form element -->
-        <form>
-          <div class="hero-form">
+    <!-- hero/jumbotron -->
+    <section class="hero">
+      <!-- Add form element -->
+      <form>
+        <div class="hero-form">
           <h3>Get Started Today</h3>
           <p>Fill out this form and one of our trainers will schedule a consult.</p>
           <!-- Name -->
@@ -46,7 +47,7 @@
           <!-- Email -->
           <label for="email">Enter email address:</label>
           <input
-            type="text"
+            type="email"
             placeholder="Email Address"
             name="email"
             id="email"
@@ -61,28 +62,26 @@
             id="phone"
             class="form-input"
           />
-          <p>
-            Have you worked out with a trainer before?
+          <div>
+            <p>Have you worked out with a trainer before?</p>
             <input type="radio" name="trainer-confirm" id="trainer-yes" />
             <label for="trainer-yes">Yes</label>
             <input type="radio" name="trainer-confirm" id="trainer-no" />
             <label for="trainer-no">No</label>
-          </p>
-          <p>
+          </div>
+          <div>
             <label for="checkbox">
               I acknowledge that I am at least 18 year of age.
             </label>
             <input type="checkbox" name="age-confirm" id="checkbox" />
-          </p>
+          </div>
           <button type="submit">
             Get running!
           </button>
-        </form>
-      </div>
-    <!-- hero/jumbotron -->
-    <section class="hero">
+        </div>
+      </form>
+    </section>
     <!-- "what we do" section-->
-    <section></section>
     <section id="what-we-do" class="intro">
       <h2 class="section-title primary-border">What We Do</h2>
       <p>
@@ -117,7 +116,6 @@
         <p>Bi-weekly checkins with your trainer will keep you focused.</p>
       </div>
     </section>
-
     <!-- "meet the trainers" section -->
     <section id="your-trainers" class="trainers">
       <h2 class="section-title primary-border">
@@ -149,5 +147,5 @@
         ❤️ Made with love by Run Buddy
       </h2>
     </footer>
-  </html>
 </body>
+</html>
