@@ -252,6 +252,13 @@ section {
   font-style: normal;
 }
 
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
 .contact-info a {
   color: #fce138;
 }
