@@ -16,12 +16,23 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   text-decoration: none;
@@ -32,6 +43,7 @@ header nav {
 }
 header nav ul li {
   display: inline;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header nav ul {
   display: flex;
@@ -40,11 +52,19 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
+
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 footer {
   background: #fce138;
   width: 100%;
@@ -80,6 +100,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 .hero-form {
   border: 3px solid #024e76;
@@ -104,7 +126,14 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
 .hero-form label {
   margin: 0 5px;
 }
@@ -114,7 +143,13 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;
+}
+
 /* Call to Action */
 .hero-cta {
   width: 35%;
@@ -128,6 +163,7 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Hero Style End */
 
@@ -143,12 +179,19 @@ section {
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
-  width: 80%;
   border-bottom: 1px solid #39a6b2;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.step:last-child {
+  border-bottom: none;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step-info {
@@ -310,6 +353,12 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -320,6 +369,12 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info address {
@@ -331,6 +386,12 @@ section {
 
 .contact-info a {
   color: #fce138;
+}
+
+.rounded-corners {
+  -webkit-border-radius: 10px; /* old versions of chrome and safari */
+  -moz-border-radius: 10px; /* old versions of firefox */
+  border-radius: 10px; /* standardized browsers */
 }
 /* REACH OUT STYLES END */
 
@@ -401,6 +462,7 @@ all of the other styles in the style sheet: */
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -424,9 +486,15 @@ all of the other styles in the style sheet: */
     width: 100%;
   }
 
-  .hero-cta,
+  .hero-cta {
+    width: 100%;
+  }
+
   .hero-form {
     width: 100%;
+    background-color: #fce138;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
   }
 
   .hero-cta {
