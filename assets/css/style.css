@@ -338,6 +338,18 @@ section {
   display: flex;
 }
 
+.service-grid-container {
+  display: grid;
+}
+
+.service-grid-item {
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  border: solid;
+  color: black;
+}
+
 /* "It's important that they go in this order after 
 all of the other styles in the style sheet: */
 
